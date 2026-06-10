@@ -61,17 +61,6 @@
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;
 
-  # # Enable login greeter   
-  # services.greetd = {
-  # 	enable = true;
-  # 	settings = {
-  # 	  default_session = {
-  # 	    command = "${pkgs.tuigreet}/bin/tuigreet --time --cmd start-hyprland";
-  # 	    user = "greeter";
-  # 	  };
-  # 	};
-  # };
-
   # List packages installed in system profile. To search, run:
   # $ nix search wget
   environment.systemPackages = with pkgs; [
@@ -84,8 +73,6 @@
      lldb
      jq
      libreoffice
-  #  vim # Do not forget to add an editor to edit configuration.nix! The Nano editor is also installed by default.
-  #  wget
   ];
 
   # Hopefully enable nvidia drivers
