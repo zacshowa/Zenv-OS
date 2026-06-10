@@ -9,7 +9,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 
-- v0.0.1 Add initial Dotfile submodule
+- v0.0.1 Add initial dotfile configs.
 - v0.0.1 Add initial NixOS config including Nix flake `flake.nix`, and homemanager config `home.nix`
 - v0.0.1 Add initial `configuration.nix` and `hyprland.nix` to handle system configuration and hyprland installation
 - v0.0.1 Add initial `CHANGELOG.md`
