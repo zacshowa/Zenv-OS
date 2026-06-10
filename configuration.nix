@@ -20,6 +20,7 @@
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
 
+  boot.kernelParams = [ "module_blacklist=i915" ];
   networking.hostName = "REDACTED"; # Define your hostname. This is redacted on github, idk if it really needs to be, but I decided I might as well.
   # networking.wireless.enable = true;  # Enables wireless support via wpa_supplicant.
 
