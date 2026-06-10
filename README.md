@@ -1,6 +1,6 @@
 # Zenv-OS
 This repo contains the NixOS configuration that I use to run my dev environment, as well as my dotfiles that are managed in part by home-manager.
-These dotfiles are maintained in a separte repo, but it's not easy to use submodules as inputs to a nix flake (at least that's not what I want to spend my time on right now)
+These dotfiles are maintained in a separate repo, but it's not easy to use submodules as inputs to a nix flake (at least that's not what I want to spend my time on right now)
 For now, this means that these are maintained independently from the dotfile repo, but I will be keeping them in sync.
 
 How did I come up with this name you might ask? There are a few factors.
