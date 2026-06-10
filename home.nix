@@ -26,11 +26,11 @@
   };  
 
   home.file.".config/hypr" = {
-    source = ./dotfiles/hypr;
+    source = ./config/hypr;
     recursive = true;
   };
   home.file.".config/waybar" = {
-    source = ./dotfiles/waybar;
+    source = ./config/waybar;
     recursive = true;
   };  
 }
