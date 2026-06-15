@@ -9,6 +9,18 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 
+
+### Changed
+ 
+
+### Removed
+
+- None
+
+## [0.0.1] - 15/06/2026 
+
+### Added
+
 - v0.0.1 Added Nixfmt to the machine and formatted files.
 - v0.0.1 Add initial dotfile configs.
 - v0.0.1 Add initial NixOS config including Nix flake `flake.nix`, and homemanager config `home.nix`
@@ -17,26 +29,15 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - v0.0.1 Add initial `.gitignore`
 - V0.0.1 Initialize git repo with mostly blank `README.md` and GPL 3.0
 
+
+### Fixed
+
+- None
+
 ### Changed
- 
+
 - v0.0.1 Update README.md with initial information about project.
 
 ### Removed
 
 - None
-
-## [0.0.1] - TBD 
-
-### Added
-
-
-
-### Fixed
-
-
-
-### Changed
-
-
-
-### Removed
