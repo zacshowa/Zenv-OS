@@ -78,15 +78,17 @@
   # List packages installed in system profile. To search, run:
   # $ nix search wget
   environment.systemPackages = with pkgs; [
-    helix
-    lshw
-    git
-    atlauncher
-    lua-language-server
-    rust-analyzer
-    lldb
-    jq
-    libreoffice
+     helix
+     lshw
+     git
+     atlauncher
+     lua-language-server
+     rust-analyzer
+     lldb
+     jq
+     libreoffice
+     # Just is great for having commands for individual projects, it probably makes more sense in a projects flake, but I also want it on my system just in case.
+     just
   ];
 
   # Hopefully enable nvidia drivers
