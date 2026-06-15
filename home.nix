@@ -1,4 +1,9 @@
-{inputs, config, pkgs, ...}:
+{
+  inputs,
+  config,
+  pkgs,
+  ...
+}:
 
 {
   home.username = "REDACTED";
@@ -14,16 +19,22 @@
     systemd.enable = false;
     xwayland.enable = true;
     package = inputs.hyprland.packages.${pkgs.stdenv.hostPlatform.system}.hyprland;
-    portalPackage = inputs.hyprland.packages.${pkgs.stdenv.hostPlatform.system}.xdg-desktop-portal-hyprland;
+    portalPackage =
+      inputs.hyprland.packages.${pkgs.stdenv.hostPlatform.system}.xdg-desktop-portal-hyprland;
   };
 
   programs.bash = {
     enable = true;
     shellAliases = {
-      btw = "echo Does this work??";
-      test = "echo home manager is working?";
+      btw = "echo I use NixOs :^). And Nvidia hardware :^(";
     };
-  };  
+  };
+
+  home.packages = [
+    pkgs.signal-desktop
+    pkgs.nil
+    pkgs.nixfmt
+  ];
 
   home.file.".config/hypr" = {
     source = ./config/hypr;
@@ -32,5 +43,5 @@
   home.file.".config/waybar" = {
     source = ./config/waybar;
     recursive = true;
-  };  
+  };
 }

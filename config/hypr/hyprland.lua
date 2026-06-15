@@ -22,19 +22,21 @@ hl.env("AQ_NO_MODIFIERS", "1") -- This apparently "Disables modifiers for the DR
 -- These configs are based entirely on my setup, the above docs are great.
 -- It only took me a couple minutes after reading them to configure a 2 monitor setup,
 -- so it should be easy for any user to configure this to their exact setup, or do so on the fly. 
+
 hl.monitor({
     output   = "eDP-1",
+    mode     = "preferred", -- 1920x1080@360
+    position = "0x0",
+    scale    = "1",
+})
+
+hl.monitor({
+    output   = "",
     mode     = "preferred", -- 1920x1080@360
     position = "auto",
     scale    = "1",
 })
 
-hl.monitor({
-    output   = "DP-7",
-    mode     = "2560x1440@120.00", -- 2560x1440@165
-    position = "auto",
-    scale    = "1",
-})
 
 
 ---------------------
