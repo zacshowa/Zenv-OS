@@ -48,6 +48,11 @@ local terminal    = "kitty"
 local fileManager = "dolphin"
 local menu        = "rofi"
 local browser     = "firefox"
+local screenshot  = "hyprshot -m"
+
+-- Set commands for commonly executed items.
+local hyprshot_region = screenshot .. " " .. "region"
+local hyprshot_window = screenshot .. " " .. "window"
 
 
 -------------------
@@ -286,6 +291,8 @@ hl.bind(mainMod .. " + L", hl.dsp.focus({ direction = "right" }))
 hl.bind(mainMod .. " + K",    hl.dsp.focus({ direction = "up" }))
 hl.bind(mainMod .. " + J",  hl.dsp.focus({ direction = "down" }))
 
+-- This is the start of the section in which I added binds. This will likely be something good to refactor out to a different file in the future.
+
 -- Program opening binds
 hl.bind(mainMod .. " + F", hl.dsp.exec_cmd(browser)) -- Initially bound to f for firefox. I'll probably change that though lmao.
 
@@ -295,6 +302,11 @@ hl.bind(mainMod .. " + F", hl.dsp.exec_cmd(browser)) -- Initially bound to f for
 hl.bind(mainMod .. " + D + R", hl.dsp.exec_cmd(menu .. " -show drun -show-icons"))
 hl.bind(mainMod .. " + W + R", hl.dsp.exec_cmd(menu .. " -show window -show-icons"))
 hl.bind(mainMod .. " + R", hl.dsp.exec_cmd(menu .. " -show run -show-icons"))
+
+hl.bind(mainMod .. " + SHIFT + P + R", hl.exec_cmd(hyprshot_region))
+hl.bind(mainMod .. " + SHIFT + P + W", hl.exec_cmd(hyprshot_window))
+
+-- This is the end of the section for which I have added custom binds.
 
 -- Switch workspaces with mainMod + [0-9]
 -- Move active window to a workspace with mainMod + SHIFT + [0-9]
