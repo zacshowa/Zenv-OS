@@ -19,10 +19,14 @@ How did I come up with this name you might ask? There are a few factors.
 Everything I have ever learned, will learn, and will one day forget about computers has been because of the mentors that I have been exceedingly lucky to have in my life.
 Many people have expressed a similar idea over hundreds of years, potentially as far back as the middle ages (if one chooses to believe [Wikipedia](https://en.wikipedia.org/wiki/Standing_on_the_shoulders_of_giants#Middle_Ages) at the time of writing).
 One that has been most famously attributed to Isaac Newton in the following form "If I have seen further, it is by standing on the shoulders of Giants".
-I've often found this quote resonates with me deeply, and I feel as though I must always pay my respects to the knowledge and skills I have gained due to the legacies of the giants of computing.
+I've often found this quote resonates with me deeply, and I feel as though I must always pay my respects to the knowledge and skills I have gained due to my time with some of the giants of computing.
+There are also a select few names that have been large influences on me, even if their contributions are less strictly related to computing.
 
 These names are in no particular order, is non-exhaustive, and is subject to change as others contributions to my knowledge of this engineering discipline help to evolve my practice of it, their names will be added here in kind.
 
+- My Grandfather: For giving me the spirit of an engineer.
+- My Mother: For giving me endless love, and fostering my creativity at every turn.
+- My Father: For always pushing me to be the best version of myself.
 - Jason Mckenna: For introducing me to programming with Lego Mindstorm robots.
 - Brian Rogoff: For being a life raft in raging, ghostly waters, and introducing me to Nix/NixOS.
 - Mathis Antony: For teaching me most of what I know about Nix dev environments, NixOS, and general contributions to my growth as an engineer.
@@ -33,9 +37,13 @@ These names are in no particular order, is non-exhaustive, and is subject to cha
 - Jeb Bearer: For being a lighthouse through the storm, and reminding me what to be passionate about.
 - Luke Ianucci: For showing me new ways to tackle problems, and reminding me that others know when I pour my soul into something.
 - Jean Gal: For helping evolve my humor and resilience in the face of hardship, no matter how great.
-- Jeremy He: For showing me what incredible technical speed looks like
+- Jeremy He: For showing me what incredible technical speed looks like.
 - Sneh Koul: For being an excellent leader during the most uncertain times.
+- Alex Xiong: For helping me embrace the spirit of John Carmack.
 
+This repo started as a product of following the articule [here](https://www.tonybtw.com/tutorial/nixos-hyprland/).
+Some of the code from the tutorial lives on in this repo, other parts of it do not, I think the primary resident piece of code, is the waybar `config.jsonc` and `style.css` in `./config/waybar`.
+That guide was very helpful in getting my machine set up, even if I had to fight with home manager for quite a while. I suspect that was a result of me doing something wrong.
 
 ## Contributing:
 Any contributions are welcome via PR's, but my will, as the BDFL of this project, will be the deciding factor, at least for now. IDK what happens if other people start using this for real.
