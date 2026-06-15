@@ -32,7 +32,7 @@
 
   home.packages = [
     pkgs.signal-desktop
-    # Add nix lanugage server and nixfmt 
+    # Add nix lanugage server and nixfmt
     pkgs.nil
     pkgs.nixfmt
     # Add a screenshot manager, This should probably end up at the system level?

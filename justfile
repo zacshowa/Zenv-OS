@@ -1,0 +1,2 @@
+format:
+    nixfmt -- ./*.nix
