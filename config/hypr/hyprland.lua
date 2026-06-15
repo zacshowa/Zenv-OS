@@ -303,8 +303,8 @@ hl.bind(mainMod .. " + D + R", hl.dsp.exec_cmd(menu .. " -show drun -show-icons"
 hl.bind(mainMod .. " + W + R", hl.dsp.exec_cmd(menu .. " -show window -show-icons"))
 hl.bind(mainMod .. " + R", hl.dsp.exec_cmd(menu .. " -show run -show-icons"))
 
-hl.bind(mainMod .. " + SHIFT + P + R", hl.exec_cmd(hyprshot_region))
-hl.bind(mainMod .. " + SHIFT + P + W", hl.exec_cmd(hyprshot_window))
+hl.bind(mainMod .. " + SHIFT + P + R", hl.dsp.exec_cmd(hyprshot_region))
+hl.bind(mainMod .. " + SHIFT + P + W", hl.dsp.exec_cmd(hyprshot_window))
 
 -- This is the end of the section for which I have added custom binds.
 
