@@ -1,9 +1,7 @@
 # This configuration has been dervied from the default config. I've found many of the comments helpful.
 # As such, I've left a lot, and will remove them if I deem them unnecessary.
 {
-  inputs,
   config,
-  lib,
   pkgs,
   ...
 }:
