@@ -87,6 +87,8 @@
     libreoffice
     # Just is great for having commands for individual projects, it probably makes more sense in a projects flake, but I also want it on my system just in case.
     just
+    nvtopPackages.full
+    bolt
   ];
 
   # Hopefully enable nvidia drivers

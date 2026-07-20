@@ -18,6 +18,7 @@
 
 -- This is an attempt to fix my second monitor (DP-7) from being stuck on a single image.
 hl.env("AQ_NO_MODIFIERS", "1") -- This apparently "Disables modifiers for the DRM buffer", I'm not entirely sure what that means.
+hl.env("AQ_DRM_DEVICES", "/dev/dri/nvidia-dgpu:/dev/dri/intel-igpu")
 
 -- These configs are based entirely on my setup, the above docs are great.
 -- It only took me a couple minutes after reading them to configure a 2 monitor setup,
@@ -25,17 +26,17 @@ hl.env("AQ_NO_MODIFIERS", "1") -- This apparently "Disables modifiers for the DR
 
 hl.monitor({
     output   = "eDP-1",
-    mode     = "preferred", -- 1920x1080@360
+    mode     = "1920x1080@360", -- 1920x1080@360
     position = "0x0",
     scale    = "1",
 })
 
-hl.monitor({
-    output   = "",
-    mode     = "preferred", -- 1920x1080@360
-    position = "auto",
-    scale    = "1",
-})
+-- hl.monitor({
+--     output   = "DP-7",
+--     mode     = "2560x1440@60", -- 1920x1080@360
+--     position = "-2560x0",
+--     scale    = "1",
+-- })
 
 
 

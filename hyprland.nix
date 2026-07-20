@@ -31,6 +31,14 @@
     };
   };
 
+  services.udev = {
+    extraRules = ''
+      KERNEL=="card*", SUBSYSTEM=="drm", SUBSYSTEMS=="pci", KERNELS=="0000:00:02.0", SYMLINK+="dri/intel-igpu"
+
+      KERNEL=="card*", SUBSYSTEM=="drm", SUBSYSTEMS=="pci", KERNELS=="0000:01:00.0", SYMLINK+="dri/nvidia-dgpu"
+      '';
+  };
+  
   environment.systemPackages = with pkgs; [
     # Install dolphin related things.
     kdePackages.qtsvg
