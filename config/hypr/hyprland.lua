@@ -16,9 +16,10 @@
 
 -- See https://wiki.hypr.land/Configuring/Basics/Monitors/
 
--- This is an attempt to fix my second monitor (DP-7) from being stuck on a single image.
-hl.env("AQ_NO_MODIFIERS", "1") -- This apparently "Disables modifiers for the DRM buffer", I'm not entirely sure what that means.
-hl.env("AQ_DRM_DEVICES", "/dev/dri/nvidia-dgpu:/dev/dri/intel-igpu")
+-- Set the order of preference for gpu utilization by Hyprland.
+-- This is to prioritize the intel gpu, and for any external displays, we fall back to the nvidia gpu.
+
+hl.env("AQ_DRM_DEVICES", "/dev/dri/intel-igpu:/dev/dri/nvidia-dgpu") -- 
 
 -- These configs are based entirely on my setup, the above docs are great.
 -- It only took me a couple minutes after reading them to configure a 2 monitor setup,
@@ -31,12 +32,12 @@ hl.monitor({
     scale    = "1",
 })
 
--- hl.monitor({
---     output   = "DP-7",
---     mode     = "2560x1440@60", -- 1920x1080@360
---     position = "-2560x0",
---     scale    = "1",
--- })
+hl.monitor({
+    output   = "DP-7",
+    mode     = "2560x1440@165", -- 1920x1080@360
+    position = "-2560x0",
+    scale    = "1",
+})
 
 
 
@@ -100,6 +101,17 @@ hl.env("HYPRCURSOR_SIZE", "24")
 -- hl.permission("/usr/(lib|libexec|lib64)/xdg-desktop-portal-hyprland", "screencopy", "allow")
 -- hl.permission("/usr/(bin|local/bin)/hyprpm", "plugin", "allow")
 
+
+-----------------------
+--- DEBUG SETTINGS ---- (I'm sorry this isn't centered lol)
+-----------------------
+
+hl.config({
+  debug = {
+      disable_logs = true, -- Default to true for no performance overhead.
+      gl_debugging = false, -- Default to false for no performance overhead.
+  }
+})
 
 -----------------------
 ---- LOOK AND FEEL ----
