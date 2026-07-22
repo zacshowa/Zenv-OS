@@ -91,6 +91,7 @@
     just
     nvtopPackages.full
     bolt
+    direnv
   ];
 
   # Hopefully enable nvidia drivers
@@ -131,7 +132,8 @@
     enable = true;
   };
 
-  #enable hyprland
+  #setup direnv
+  programs.direnv.enable = true;
 
   # enable lock screen and idle manager for hyprland
   programs.hyprlock.enable = true;
