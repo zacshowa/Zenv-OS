@@ -12,6 +12,8 @@
     ./hardware-configuration.nix
     # Split hyprland config out from main system config.
     ./hyprland.nix
+    # Dedicated configuration file for AI related things.
+    ./ai.nix
   ];
 
   # Bootloader.

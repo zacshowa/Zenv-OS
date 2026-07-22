@@ -11,6 +11,9 @@
       url = "github:hyprwm/Hyprland";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+    llm-agents = {
+      url = "github:numtide/llm-agents.nix";
+    };
   };
 
   outputs =
@@ -18,6 +21,7 @@
       nixpkgs,
       home-manager,
       hyprland,
+      llm-agents,
       ...
     }@inputs:
     {
