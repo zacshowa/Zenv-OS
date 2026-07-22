@@ -18,6 +18,9 @@
 
 -- Set the order of preference for gpu utilization by Hyprland.
 -- This is to prioritize the intel gpu, and for any external displays, we fall back to the nvidia gpu.
+-- Note, these paths are symlinked to my different GPU's as apparently the places those files live at can change.
+-- I followed the directions in the Hyprland wiki here: https://wiki.hypr.land/Configuring/Advanced-and-Cool/Multi-GPU/#telling-hyprland-which-gpu-to-use
+-- to create these symlinks as a udev rule in my Nix config.
 
 hl.env("AQ_DRM_DEVICES", "/dev/dri/intel-igpu:/dev/dri/nvidia-dgpu") -- 
 
