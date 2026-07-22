@@ -37,6 +37,7 @@
     pkgs.nixfmt
     # Add a screenshot manager, This should probably end up at the system level?
     pkgs.hyprshot
+    pkgs.gimp
   ];
 
   home.file.".config/hypr" = {
