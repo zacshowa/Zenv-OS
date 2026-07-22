@@ -92,6 +92,9 @@
     nvtopPackages.full
     bolt
     direnv
+
+    socat
+    bpftrace
   ];
 
   # Hopefully enable nvidia drivers
