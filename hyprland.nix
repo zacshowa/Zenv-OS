@@ -1,6 +1,5 @@
 {
   inputs,
-  config,
   pkgs,
   ...
 }:
@@ -52,10 +51,17 @@
     hyprpaper
     kitty
     rofi
+    # To configure the top bar
     waybar
+    pulseaudio
     gnome-icon-theme
     mako
     lazygit
+  ];
+
+  fonts.packages = with pkgs; [
+    # install font-awesome_4 for waybar
+    font-awesome_4 
   ];
 
 }
