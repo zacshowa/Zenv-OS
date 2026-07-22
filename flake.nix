@@ -21,7 +21,6 @@
       nixpkgs,
       home-manager,
       hyprland,
-      llm-agents,
       ...
     }@inputs:
     {
